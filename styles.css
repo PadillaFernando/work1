@@ -6,6 +6,7 @@ body{
 h1{
     color: #025157;
     text-align: center;
+    font-family: 'Kdam Thmor Pro', sans-serif;
 }
 
 p{
@@ -14,6 +15,63 @@ p{
     font-size: 20px;
 }
 button{
-    color: #ffffff;
+    color: #f50e0e;
     background-color: #fffbf7;
 }
+
+ul{
+    display: inline-block;
+}
+
+.header {
+    margin: 40px 25px 25px 25px;
+    font-size: 0;
+}
+
+.header > * {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 45px;
+    height: 100%;
+    vertical-align: middle;
+    font-style: sans-serif;
+
+
+}
+
+.logo {
+    width: 15%;
+}
+.logo > img {
+    width: 20%;
+    margin-left: 100px;
+}
+
+.navbar {
+    width: 70%;
+    text-align: left;
+    color: #025157;
+    font-family: 600;
+    
+    
+    
+}
+
+.actions {
+    width: 15%;
+    font-size: 14px;
+    font-weight: 600;
+    color: #67b54b;
+    
+}
+button {
+    color: #fff;
+    background-color: #67b54b;
+    padding: 12px 14px;
+    border-radius: 5px;
+  }
+
+  .main {
+      margin-top: 140px;
+
+  }
