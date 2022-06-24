@@ -130,3 +130,83 @@ button {
       right: 0;
       background-color: #fff;
   }
+  iframe {
+    display: flex;
+    margin: auto;
+  }
+  
+  .explanatory-video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .explanatory-video img {
+    width: 120px;
+    margin-top: 10px;
+  }
+
+  .features {
+      display: grid;
+      height: 660px;
+      padding: 50px 100px;
+      background-color: #025157;
+      grid-template: repeat(2, 1fr) / repeat(2, 1fr) ;
+      gap: 30px
+      
+  }
+
+.caja {
+    display: flex;
+    background-color: #fff;
+    border-radius: 5px;
+    justify-content: space-around;
+    
+    
+}
+
+.izq {
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    margin: 0 10%;
+    justify-content: center;
+}
+
+.izq img {
+    align-self: center;
+    width: 20%;
+}
+
+.izq h2 {
+    font-family: "Monserrat";
+    font-weight: 500;
+}
+
+.izq p {
+    font-family: "Monserrat";
+    font-size: 1rem;
+}
+
+.izq a {
+    font-family: sans-serif;
+    color: #67b54b;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+
+.der {
+    display: flex;
+    position: relative;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+}
+
+.der img{
+    width: 100%;
+    position: absolute;
+    left: 30%;
+}
+
