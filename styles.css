@@ -4,6 +4,7 @@ body{
 }
 
 h1{
+    font-size: 60px;
     color: #025157;
     text-align: center;
     font-family: 'Kdam Thmor Pro', sans-serif;
@@ -39,32 +40,32 @@ ul{
 
 }
 
-.logo {
+.navbar-brand {
     width: 15%;
 }
-.logo > img {
+.navbar-brand > img {
     width: 20%;
     margin-left: 100px;
 }
 
-.navbar {
-    width: 60%;
+.container-fluid {
+    width: 100%;
     text-align: left;
     color: #025157;
-    font-family: 600;
-    
-    
+    font-family: 600; 
     
 }
 
-.actions {
-    width: 15%;
+.d-flex {
+    width: 40%;
     font-size: 14px;
     font-weight: 600;
     color: #67b54b;
     
+    
 }
-button {
+.d-flex button {
+    width: 50%;
     color: #fff;
     background-color: #67b54b;
     padding: 12px 14px;
@@ -210,3 +211,96 @@ button {
     left: 30%;
 }
 
+
+
+/** dispositivos móviles en vista viewport (vertical) */
+@media (max-width: 575px) {
+    .navbar,
+    .actions{
+        display: none;
+    }
+    h1 {
+        font-size: 30px;
+    }
+
+    .main {
+        margin-top: 150px;
+    }
+
+    .banner > img {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .banner  { /* Esto yo se lo agregue */ 
+        margin-top: 0;
+    }
+
+    .publish > form {
+        flex-direction: column;
+    } /* hola */
+
+    .publish > form {
+        height: 50px;
+        margin-top: 10px;
+    }
+
+    .publish > form > div > input {
+        width: 65px;
+        
+    }
+
+    .promo {
+        flex-direction: column;
+        max-width: 90%;
+    }
+
+    .explanatory-video {
+        width: 100%;
+    }
+    
+    .publish {
+        margin-top: 10px;
+    }
+
+    .publish > h3 {
+        font-size: 25px;
+        line-height: 1.2;
+    }
+
+    .features {
+        grid-template: repeat(4, 1fr) / 1fr;
+        padding-left: 0;
+        padding-right: 0;
+      }
+    
+      .der {
+        display: none;
+      }
+
+    
+}
+
+    
+
+
+
+/** dispositivos pequeños en vista landscape (horizontal) */
+@media (min-width: 576px) and (max-width: 767px) {
+  
+}
+
+/** dispositivos medianos (tablets) */
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/** dispositivos grandes (desktops) */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/** dispositivos extra grandes (monitores grandes, tvs) */
+@media (min-width: 1200px) {
+
+}
