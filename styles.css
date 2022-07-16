@@ -17,9 +17,11 @@ p{
 }
 button{
     color: #fff;
-    background-color: #67b54b;
+    background-color: #025157;
 }
-
+.texto-boton:hover {
+  background-color: #67b54b;
+}
 ul{
     display: inline-block;
 }
@@ -263,8 +265,8 @@ ul{
   
   /* Agregamos position: relative para recibir un elemento con position:absolute más adelante */
   .success-stories .card .card-body {
-    max-width: 370px;
-    width: 100%;
+    max-width: 10px;
+    width: 10%;
     position: relative;
     padding: 40px 1rem 1rem;
   }

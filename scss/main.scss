@@ -1,0 +1,93 @@
+@use 'global' as *;
+
+.blog {
+    background-color: #ffff ;
+    max-width: unset;
+    padding: 5% 10%;
+
+    .title {
+        @extend %base-title;
+    }
+
+    .process-list {
+        margin-top: 40px;
+        margin-bottom: 36px;
+
+        .process {
+            margin-bottom: 25px;
+            & > div {
+                & > h3 {
+                    color: $dark-green-title;
+                    margin-bottom: 0;
+                    font-size: 30px;
+                    font-weight: 500;
+
+                }
+                & > p {
+                    color: $dark-green-text;
+                    margin: 0;
+                }
+            }
+
+            .process-icon {
+                width: 60px;
+                height: 60px;
+                margin-right: 10px;
+                text-align: center;
+
+                img {
+                    height: 100%;
+                }
+            }
+        }
+    }
+    button {
+        height: auto;
+        border-radius: 8px;
+        padding: 12px;
+        width: 180px;
+        margin-bottom: 15px;
+
+    }
+
+    .card-body{
+        color: $gray;
+        .card-title {
+            font-size: 24px;
+            margin-bottom: 0.75rem;
+            margin-top: 0;
+            margin-bottom: 0.5rem;
+            font-family: "Open Sans", sans-serif;
+           
+        }
+
+        .read-more a{
+            text-decoration: underline;
+        }
+
+        .author {
+            margin-left: 8px;
+             font-weight: 600;
+            font-size: 14px;
+            
+            img {
+                border-radius: 100px;
+
+            }
+        }
+
+        .category {
+            color: $ligth-green;
+            font-size: 14px;
+            font-weight: bolder;
+        }
+
+        .read-time {
+            color: $ligth-gray;
+            font-size: 14px;
+        }
+    }
+
+    
+}
+
